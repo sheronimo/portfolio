@@ -1,0 +1,66 @@
+/* Import Font */
+@import url('https://fonts.googleapis.com/css2?family=Gantari:wght@300;400;600&display=swap');
+
+/* Resets */
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font: inherit;
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+img {
+	max-width: 100%;
+	display: block;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	*,
+	*::before,
+	*::after {
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0.01ms !important;
+		scroll-behavior: auto !important;
+	}
+}
+
+body {
+	font-family: 'Gantari', sans-serif;
+}
+
+/* Navigation */
+.primary-header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 2rem;
+}
+
+.logo {
+	width: min(50vw, 6.25rem);
+}
+
+.nav-list {
+	display: flex;
+	align-items: center;
+	column-gap: 2rem;
+}
+
+.nav-item {
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-size: 1.5rem;
+}
