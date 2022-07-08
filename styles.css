@@ -55,7 +55,7 @@ body {
 .nav-list {
 	display: flex;
 	align-items: center;
-	column-gap: 2rem;
+	gap: 2rem;
 }
 
 .nav-item {
