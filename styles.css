@@ -95,23 +95,25 @@ body {
 	padding: 5px;
 }
 
-.nav-item::after {
-	content: '';
-	position: absolute;
-	bottom: -0.5rem;
-	left: 0;
-	width: 100%;
-	height: 4px;
-	background-color: var(--foreground);
-	border-radius: 10px;
-	transform-origin: right;
-	transform: scaleX(0);
-	transition: transform 0.3s ease-out;
-}
+@media (hover: hover) {
+	.nav-item::after {
+		content: '';
+		position: absolute;
+		bottom: -0.5rem;
+		left: 0;
+		width: 100%;
+		height: 4px;
+		background-color: var(--foreground);
+		border-radius: 10px;
+		transform-origin: right;
+		transform: scaleX(0);
+		transition: transform 0.3s ease-out;
+	}
 
-.nav-item:hover::after {
-	transform-origin: left;
-	transform: scaleX(1);
+	.nav-item:hover::after {
+		transform-origin: left;
+		transform: scaleX(1);
+	}
 }
 
 .nav-item a:focus-visible {
