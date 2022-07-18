@@ -79,6 +79,13 @@ body {
 	overflow-x: hidden;
 }
 
+/* Utilities */
+.container {
+	max-width: 81.25rem;
+	margin-inline: auto;
+	padding-inline: 1.5rem;
+}
+
 /* Navigation */
 .primary-header {
 	display: flex;
