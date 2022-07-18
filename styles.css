@@ -5,7 +5,7 @@
 :root {
 	--clr-light: hsl(54, 54%, 95%);
 	--clr-dark: hsl(346, 15%, 15%);
-	--clr-primary: hsl(38, 85%, 70%);
+	--clr-primary: hsl(37, 85%, 60%);
 	--clr-secondary: hsl(125, 31%, 85%);
 
 	--clr-navbg-nums: 54, 54%, 95%;
@@ -131,6 +131,45 @@ body {
 	color: var(--background);
 }
 
+/* Socials Bar */
+.socials-bar {
+	display: block;
+	position: fixed;
+	bottom: 4rem;
+	left: 5rem;
+	display: flex;
+	flex-direction: column-reverse;
+	align-items: center;
+	justify-content: center;
+}
+
+.socials-heading {
+	text-transform: uppercase;
+	font-size: 1.5rem;
+	letter-spacing: 10px;
+	transform: rotate(-90deg);
+	margin-top: 2.5rem;
+}
+
+.socials-item {
+	padding-block: 0.5rem;
+}
+
+.socials-icon {
+	width: 2rem;
+	height: 2rem;
+	transition: all 0.3s ease;
+}
+
+.socials-item a:focus {
+	outline: 0;
+}
+
+.socials-item a:hover .socials-icon,
+.socials-item a:focus .socials-icon {
+	fill: var(--clr-primary);
+}
+
 /* MEDIA QUERIES */
 
 /* Hover states on only devices that can hover */
@@ -195,5 +234,12 @@ body {
 
 	.nav-toggle.flip {
 		transform: rotate(180deg);
+	}
+}
+
+/* Medium Screen */
+@media (max-width: 64em) {
+	.socials-bar {
+		display: none;
 	}
 }
