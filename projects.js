@@ -47,6 +47,15 @@ const projects = [
 		stack: 'HTML, SCSS',
 		repo: 'https://github.com/sheronimo/frontendmentor-fourcard',
 		live: 'https://sheronimo.github.io/frontendmentor-fourcard/'
+	},
+	{
+		id: 7,
+		name: 'SNH48G Budgeter App',
+		summary:
+			'Simple app for calculating how many SNH48 Election votes you can buy with a specified budget and currency',
+		stack: 'React',
+		repo: 'https://github.com/sheronimo/react-snh48g-budgeter-app',
+		live: 'https://snh48g-budgeter.netlify.app/'
 	}
 ];
 
