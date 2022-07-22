@@ -171,6 +171,16 @@ body {
 	fill: var(--clr-primary);
 }
 
+/* FOOTER */
+.footer {
+	text-align: center;
+	padding-block: 1rem;
+}
+
+.footer-social-list {
+	display: none;
+}
+
 /* MEDIA QUERIES */
 
 /* Hover states on only devices that can hover */
@@ -242,5 +252,17 @@ body {
 @media (max-width: 64em) {
 	.socials-bar {
 		display: none;
+	}
+
+	.footer-social-list {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 2rem;
+		margin-bottom: 0.5rem;
+	}
+
+	.footer .socials-item {
+		padding-block: 0;
 	}
 }
