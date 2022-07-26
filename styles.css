@@ -94,7 +94,6 @@ body {
 .btn {
 	font-size: 1.25rem;
 	font-weight: 600;
-	margin-top: 1rem;
 	padding-block: 0.75rem;
 	padding-inline: 1rem;
 	background-color: var(--clr-secondary);
@@ -126,6 +125,12 @@ body {
 	width: min(50vw, 6.25rem);
 }
 
+.primary-nav {
+	display: flex;
+	align-items: center;
+	gap: 2rem;
+}
+
 .nav-list {
 	display: flex;
 	align-items: center;
@@ -148,13 +153,21 @@ body {
 	padding: 5px;
 }
 
-.nav-item a:focus-visible {
+.nav-item a:focus-visible,
+.mode-toggle:focus-visible {
 	outline: 2px solid var(--foreground);
 }
 
 .nav-item a:active {
 	background-color: var(--foreground);
 	color: var(--background);
+}
+
+/* Light/Dark Mode Toggle */
+.mode-toggle {
+	background: transparent;
+	height: 1.5rem;
+	width: 1.5rem;
 }
 
 /* Socials Bar */
@@ -219,6 +232,7 @@ body {
 	flex-wrap: wrap;
 	gap: 1.5rem;
 	margin-top: 1rem;
+	margin-bottom: 3rem;
 }
 
 .technology svg {
@@ -281,7 +295,8 @@ body {
 		transform: translateX(0%);
 	}
 
-	.nav-list {
+	.nav-list,
+	.primary-nav {
 		flex-direction: column;
 	}
 
