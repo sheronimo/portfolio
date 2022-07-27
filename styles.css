@@ -115,25 +115,20 @@ body {
 	display: inline-block;
 	font-size: 2.5rem;
 	font-weight: 600;
-	position: relative;
 	padding: 0.5rem;
+	background-image: linear-gradient(
+		120deg,
+		var(--clr-secondary) 0%,
+		var(--clr-primary) 100%
+	);
+	background-repeat: no-repeat;
+	background-size: 100% 0.5rem;
+	background-position: 0 90%;
+	transition: background-size 0.3s ease;
 }
 
-.section-heading::after {
-	content: '';
-	position: absolute;
-	bottom: 0.5rem;
-	left: 0;
-	width: 100%;
-	height: 10%;
-	z-index: -1;
-	background-color: var(--clr-secondary);
-}
-
-.section-heading:hover::after {
-	bottom: 0;
-	height: 100%;
-	transition: all 0.5s ease;
+.section-heading:hover {
+	background-size: 100% 100%;
 }
 
 /* Navigation */
@@ -144,6 +139,7 @@ body {
 	padding: 2rem;
 	position: sticky;
 	top: 0;
+	background-color: var(--background);
 }
 
 .logo {
@@ -193,6 +189,27 @@ body {
 	background: transparent;
 	height: 1.5rem;
 	width: 1.5rem;
+}
+
+/* CONTACT SECTION */
+.contact {
+	padding-block: 3rem;
+}
+
+.contact-item {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: 300;
+	gap: 1.5rem;
+	font-size: clamp(1rem, 5vw, 2rem);
+	margin-top: 2rem;
+}
+
+.contact-icon {
+	width: 1.75rem;
+	height: 1.75rem;
+	flex-shrink: 0;
 }
 
 /* Socials Bar */
@@ -307,7 +324,7 @@ body {
 
 	.primary-nav {
 		position: fixed;
-		z-index: 1000;
+		z-index: 999;
 		inset: 0 0 0 20%;
 		background-color: var(--clr-secondary);
 		padding: min(25vh, 8rem) 1.5rem;
@@ -328,9 +345,9 @@ body {
 	.nav-toggle {
 		display: block;
 		position: absolute;
+		z-index: 1000;
 		width: 2rem;
 		aspect-ratio: 1;
-		z-index: 9999;
 		top: 2rem;
 		right: 1.5rem;
 		background-color: transparent;
@@ -373,7 +390,7 @@ body {
 		align-items: center;
 		justify-content: center;
 		gap: 2rem;
-		margin-bottom: 0.5rem;
+		margin-bottom: 1rem;
 	}
 
 	.footer .socials-item {
