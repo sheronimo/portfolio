@@ -1,4 +1,4 @@
-const projects = [
+export const projects = [
 	{
 		id: 1,
 		name: 'FEM — QR Code Component',
@@ -56,7 +56,13 @@ const projects = [
 		stack: 'React',
 		repo: 'https://github.com/sheronimo/react-snh48g-budgeter-app',
 		live: 'https://snh48g-budgeter.netlify.app/'
+	},
+	{
+		id: 8,
+		name: 'Quizzical',
+		summary: 'Trivia quiz game app, with questions from the Open Trivia DB',
+		stack: 'React',
+		repo: 'https://github.com/sheronimo/react-quizzical',
+		live: 'https://quizzical-shuber.netlify.app'
 	}
 ];
-
-export default projects;
