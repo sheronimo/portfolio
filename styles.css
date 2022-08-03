@@ -17,7 +17,7 @@
 .darkmode {
 	--clr-light: hsl(76, 60%, 79%);
 	--clr-dark: hsl(120, 2%, 10%);
-	--clr-primary: hsl(110, 45%, 43%);
+	--clr-primary: hsl(200, 45%, 43%);
 	--clr-secondary: hsl(132, 46%, 22%);
 
 	--clr-navbg-nums: 120, 2%, 10%;
