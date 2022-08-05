@@ -11,6 +11,11 @@ toggle.addEventListener('click', () => {
 		: toggle.setAttribute('aria-expanded', false);
 });
 
+// Scroll
+const navHeight = document.querySelector('.primary-header').offsetHeight;
+
+document.documentElement.style.setProperty('-scroll-padding', `${navHeight}px`);
+
 // Dark Mode
 let darkMode = localStorage.getItem('darkMode');
 const modeToggle = document.querySelector('#mode-toggle');

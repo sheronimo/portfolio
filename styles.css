@@ -40,6 +40,11 @@
 	font: inherit;
 }
 
+html {
+	scroll-behavior: smooth;
+	scroll-padding-top: var(--scroll-padding, 100px);
+}
+
 ul {
 	list-style: none;
 }
