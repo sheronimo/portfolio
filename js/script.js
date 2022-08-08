@@ -11,6 +11,16 @@ toggle.addEventListener('click', () => {
 		: toggle.setAttribute('aria-expanded', false);
 });
 
+const navLinks = document.querySelectorAll('.nav-item');
+
+navLinks.forEach((n) => {
+	n.addEventListener('click', () => {
+		primaryNav.classList.remove('visible');
+		toggle.classList.remove('flip');
+		toggle.setAttribute('aria-expanded', false);
+	});
+});
+
 // Scroll
 const navHeight = document.querySelector('.primary-header').offsetHeight;
 
