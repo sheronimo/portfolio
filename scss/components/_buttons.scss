@@ -1,0 +1,24 @@
+.btn {
+	padding-block: 0.75rem;
+	padding-inline: 1rem;
+	background-color: var(--clr-secondary);
+	color: var(--foreground);
+	border-radius: 5px;
+	transition: all 0.3s ease;
+
+	&:focus-visible {
+		outline: 2px solid var(--foreground);
+	}
+}
+
+.project-btn {
+	padding-block: 0.25rem;
+	padding-inline: 0.75rem;
+	border: 2px solid var(--foreground);
+	border-radius: 2rem;
+	transition: all 0.3s ease;
+
+	&:focus-visible {
+		outline: 3px solid var(--clr-primary);
+	}
+}

@@ -1,0 +1,23 @@
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
+
+@import 'base/reset';
+@import 'base/typography';
+@import 'base/global';
+
+@import 'components/container';
+@import 'components/buttons';
+@import 'components/sectionheading';
+@import 'components/linksvgs';
+
+@import 'sections/navigation';
+@import 'sections/about';
+@import 'sections/projects';
+@import 'sections/contact';
+@import 'sections/links';
+@import 'sections/footer';
+
+@import 'media/hover';
+@import 'media/laptop';
+@import 'media/tablet';
+@import 'media/mobile';

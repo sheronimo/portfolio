@@ -1,0 +1,34 @@
+/* Variables */
+:root {
+	--clr-light: hsl(54, 54%, 95%);
+	--clr-dark: hsl(346, 15%, 15%);
+	--clr-primary: hsl(37, 85%, 60%);
+	--clr-secondary: hsl(125, 31%, 85%);
+
+	--clr-navbg-nums: 54, 54%, 95%;
+
+	--background: var(--clr-light);
+	--foreground: var(--clr-dark);
+}
+
+.darkmode {
+	--clr-light: hsl(76, 60%, 79%);
+	--clr-dark: hsl(120, 2%, 10%);
+	--clr-primary: hsl(200, 45%, 43%);
+	--clr-secondary: hsl(132, 46%, 22%);
+
+	--clr-navbg-nums: 120, 2%, 10%;
+
+	--background: var(--clr-dark);
+	--foreground: var(--clr-light);
+}
+
+.darkmode .brighten {
+	filter: invert(100%);
+}
+
+body {
+	background-color: var(--background);
+	color: var(--foreground);
+	overflow-x: hidden;
+}

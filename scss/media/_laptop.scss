@@ -1,0 +1,14 @@
+@media (max-width: 100em) {
+	.socials-bar {
+		display: none;
+	}
+
+	.footer-social-list {
+		@include flex($gap: 2rem);
+		margin-bottom: 1rem;
+
+		.socials-item {
+			padding-block: 0;
+		}
+	}
+}

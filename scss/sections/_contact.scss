@@ -1,0 +1,14 @@
+.contact {
+	padding-block: 3rem;
+
+	.contact-item {
+		@include flex($gap: 1.5rem);
+		margin-top: 2rem;
+
+		.contact-icon {
+			width: 1.75rem;
+			height: 1.75rem;
+			flex-shrink: 0;
+		}
+	}
+}

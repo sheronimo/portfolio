@@ -1,0 +1,19 @@
+.hero {
+	padding-block: 3rem;
+
+	.technologies {
+		@include flex(
+			$justify: stretch,
+			$align: stretch,
+			$wrap: wrap,
+			$gap: 1.5rem
+		);
+
+		margin-top: 1rem;
+		margin-bottom: 3rem;
+
+		.technology svg {
+			fill: var(--foreground);
+		}
+	}
+}

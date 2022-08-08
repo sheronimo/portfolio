@@ -1,0 +1,71 @@
+/* Import Font */
+@import url('https://fonts.googleapis.com/css2?family=Gantari:wght@300;400;600&display=swap');
+
+body {
+	font-family: $font-stack;
+	line-height: 1.5;
+}
+
+.lead {
+	font-size: 1.5rem;
+	margin-top: 1rem;
+	line-height: 1.7;
+	max-width: 40ch;
+}
+
+.btn {
+	font-size: 1.25rem;
+	font-weight: $fw-bold;
+}
+
+.section-heading {
+	font-size: 2.5rem;
+	font-weight: $fw-bold;
+}
+
+.nav-item {
+	font-weight: $fw-bold;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-size: 1.5rem;
+}
+
+.location {
+	font-weight: $fw-bold;
+}
+
+.hero-text {
+	font-size: clamp(2rem, 10vw, 5rem);
+	font-weight: $fw-lite;
+}
+
+.project-btn {
+	font-size: 0.85rem;
+	font-weight: $fw-bold;
+}
+
+.project-title {
+	font-size: 1.6rem;
+	font-weight: $fw-bold;
+	line-height: 1.2;
+}
+
+.project-stack {
+	font-weight: $fw-lite;
+	letter-spacing: 1px;
+}
+
+.project-desc {
+	font-size: 1.15rem;
+}
+
+.contact-item {
+	font-weight: $fw-lite;
+	font-size: clamp(1rem, 5vw, 2rem);
+}
+
+.socials-heading {
+	text-transform: uppercase;
+	font-size: 1.5rem;
+	letter-spacing: 10px;
+}

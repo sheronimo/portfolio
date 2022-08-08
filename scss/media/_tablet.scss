@@ -1,0 +1,13 @@
+@media (max-width: 64em) {
+	.lead {
+		margin-inline: auto;
+	}
+
+	.hero {
+		text-align: center;
+
+		.technologies {
+			justify-content: center;
+		}
+	}
+}

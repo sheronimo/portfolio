@@ -1,0 +1,47 @@
+.primary-header {
+	@include flex($justify: space-between);
+	padding: 2rem;
+	position: sticky;
+	top: 0;
+	background-color: var(--background);
+
+	.logo {
+		width: min(50vw, 6.25rem);
+	}
+
+	.nav-toggle {
+		display: none;
+	}
+
+	.primary-nav {
+		@include flex($justify: stretch, $gap: 2rem);
+
+		.nav-list {
+			@include flex($justify: stretch, $gap: 2rem);
+
+			.nav-item {
+				position: relative;
+
+				a {
+					padding: 5px;
+
+					&:active {
+						background-color: var(--foreground);
+						color: var(--background);
+					}
+				}
+			}
+		}
+
+		.mode-toggle {
+			background: transparent;
+			height: 1.5rem;
+			width: 1.5rem;
+		}
+	}
+
+	.nav-item a:focus-visible,
+	.mode-toggle:focus-visible {
+		outline: 2px solid var(--foreground);
+	}
+}

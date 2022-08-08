@@ -1,0 +1,47 @@
+@media (max-width: 40em) {
+	/* Navigation */
+	.primary-header {
+		padding-inline: 1rem;
+
+		.nav-toggle {
+			display: block;
+			position: absolute;
+			z-index: 1000;
+			width: 2rem;
+			aspect-ratio: 1;
+			top: 2rem;
+			right: 1.5rem;
+			background-color: transparent;
+			transition: transform 0.3s ease;
+
+			&.flip {
+				@include rotate(180);
+			}
+		}
+
+		.primary-nav {
+			position: fixed;
+			z-index: 999;
+			inset: 0 0 0 20%;
+			background-color: var(--clr-secondary);
+			padding: min(25vh, 8rem) 1.5rem;
+			flex-direction: column;
+			@include translateX(100%);
+			transition: transform 0.3s ease;
+
+			.nav-list {
+				flex-direction: column;
+			}
+
+			&.visible {
+				@include translateX(0%);
+			}
+		}
+	}
+
+	/* About */
+	.technology svg {
+		width: 4rem;
+		height: 4rem;
+	}
+}

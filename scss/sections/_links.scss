@@ -1,0 +1,11 @@
+.socials-bar {
+	position: fixed;
+	bottom: 4rem;
+	left: 3rem;
+	@include flex($direction: column-reverse);
+
+	.socials-heading {
+		@include rotate(-90);
+		margin-top: 2.5rem;
+	}
+}

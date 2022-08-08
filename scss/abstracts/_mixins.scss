@@ -1,0 +1,36 @@
+// Flexbox Mixin
+@mixin flex(
+	$direction: row,
+	$justify: center,
+	$align: center,
+	$wrap: nowrap,
+	$gap: 0
+) {
+	display: flex;
+	flex-direction: $direction;
+	justify-content: $justify;
+	align-items: $align;
+	flex-wrap: $wrap;
+	gap: $gap;
+}
+
+// Transform: Rotate
+@mixin rotate($deg) {
+	transform: rotate(#{$deg}deg);
+	-webkit-transform: rotate(#{$deg}deg);
+	-ms-transform: rotate(#{$deg}deg);
+}
+
+// Transform: ScaleX
+@mixin scaleX($scale) {
+	transform: scaleX($scale);
+	-webkit-transform: scaleX($scale);
+	-ms-transform: scaleX($scale);
+}
+
+// Transform: TranslateX
+@mixin translateX($pos) {
+	transform: translateX($pos);
+	-webkit-transform: translateX($pos);
+	-ms-transform: translateX($pos);
+}

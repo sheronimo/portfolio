@@ -1,0 +1,18 @@
+.socials-item {
+	padding-block: 0.5rem;
+
+	.socials-icon {
+		width: 2rem;
+		height: 2rem;
+		fill: var(--foreground);
+		transition: all 0.3s ease;
+
+		&:focus {
+			outline: 0;
+
+			.socials-icon {
+				fill: var(--clr-primary);
+			}
+		}
+	}
+}
