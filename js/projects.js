@@ -121,5 +121,14 @@ export const projects = [
 		stack: 'HTML, SCSS, JS',
 		repo: 'https://github.com/sheronimo/frontendmentor-introcomponentwithform',
 		live: 'https://sheronimo.github.io/frontendmentor-introcomponentwithform/'
+	},
+	{
+		id: 15,
+		name: 'FEM — Expenses Chart Component',
+		summary:
+			'Frontend Mentor challenge testing dynamically loading and styling data.',
+		stack: 'HTML, CSS, JS',
+		repo: 'https://github.com/sheronimo/frontendmentor-expenseschart',
+		live: 'https://sheronimo.github.io/frontendmentor-expenseschart/'
 	}
 ];
